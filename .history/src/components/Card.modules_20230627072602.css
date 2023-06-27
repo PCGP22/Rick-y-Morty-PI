@@ -1,0 +1,14 @@
+.card{
+    display: flex;
+    background: red;
+    max-width: 200px;
+    flex-direction: column;
+    
+}
+.nombre{
+    font-weight: 600;
+}
+.description{
+    font-size: 1em;
+   
+}

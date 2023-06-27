@@ -1,0 +1,16 @@
+.card{
+    display: flex;
+    max-width: 200px;
+    flex-direction: column;
+    
+}
+.nombre{
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.description{
+    font-size: 1em;
+   text-align: left;
+   padding: 0 15px;
+}

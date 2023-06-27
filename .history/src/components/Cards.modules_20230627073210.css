@@ -1,0 +1,6 @@
+.container{
+    gap:0.5em;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

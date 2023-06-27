@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.input{
+    font-family: 'Varela Round', sans-serif;
+    height: 30px;
+    background:#629320;
+    color:white;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border:solid #4c6a25;
+    border-radius:8px;
+}
+
+.botonBuscar{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    height: 30px;
+
+}

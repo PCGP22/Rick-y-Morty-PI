@@ -1,0 +1,12 @@
+:root{
+   background:#222;
+   padding: 30px;;
+}
+
+.App {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   color:whitesmoke;
+   
+}

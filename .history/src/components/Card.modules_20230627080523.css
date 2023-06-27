@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@800&display=swap');
+
+.card{
+    display: flex;
+    background-color: #273c22;
+    flex-direction: column;
+    max-width: 270px;
+    position: relative;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.nombre{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    background: #5a894e;
+    
+    padding: 10px 0;
+}
+.description{
+    font-size: 1em;
+   text-align: left;
+
+}
+.description p{
+    margin:0;
+    padding: 15px;
+}
+.description p:nth-of-type(2n){
+   background:#7cbc6c
+}
+.description p:nth-of-type(2n-1){
+    background:#86b57a
+ }
+
+.closeButton{
+    position: absolute;
+    right: 0;
+    background-color:black;
+    color:whitesmoke;
+    border-radius: 8px;
+    height: 30px;
+    width: 30px;
+    border:solid 2px whitesmoke;
+}

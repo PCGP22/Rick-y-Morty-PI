@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    background-color: slategray;
+    flex-direction: column;
+    max-width: 250px;
+    position: relative;
+}
+.nombre{
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.description{
+    font-size: 1em;
+   text-align: left;
+   padding: 0 15px;
+}
+
+.closeButton{
+    position: absolute;
+    right: 0;
+    background-color:black;
+    color:whitesmoke;
+    border-radius: 3px;
+    height: 30px;
+    width: 30px;
+    border:solid 2px whitesmoke;
+}

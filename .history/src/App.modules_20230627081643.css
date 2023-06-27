@@ -1,0 +1,11 @@
+:root{
+   background:#222;
+}
+
+.App {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   color:whitesmoke;
+   
+}
