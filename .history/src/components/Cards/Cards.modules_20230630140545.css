@@ -1,0 +1,14 @@
+.container {
+    gap:1em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background: url(https://rare-gallery.com/thumbs/5397797-sky-stars-colours-colors-galaxy-nebula-futuristic-space-night-evening-night-sky-blue-purple-planet-astronomy-nature-universe-mist-outdoors-deep-space-creative-commons-images.jpg);
+    /* background-repeat: no-repeat;
+    background-position: fill; */
+    background-size: cover;
+}

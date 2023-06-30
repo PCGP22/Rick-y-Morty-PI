@@ -1,0 +1,8 @@
+.navDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    color:red;
+}

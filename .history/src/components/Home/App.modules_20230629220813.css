@@ -1,0 +1,31 @@
+:root{
+   background:#222;
+  padding:0;
+  margin:30px 0;
+}
+
+.App {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   color:whitesmoke;
+   
+}
+.bannerDiv{
+   position: relative;
+}
+.banner{
+   display: grid;
+   place-content: center;
+   width: 100%;
+}
+p{
+   position: absolute;
+   top:0px;
+   width: 100%;
+   background:linear-gradient(180deg, #ffffff2d 0%, #222 144% 144%)
+   ;
+   height: 100%;
+}
+
+

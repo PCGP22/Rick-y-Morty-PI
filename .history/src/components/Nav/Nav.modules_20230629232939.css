@@ -1,0 +1,11 @@
+.navDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#4c6a25;
+}
+button{
+    background-color: #222;
+    border:none;
+    color:whitesmoke;
+}

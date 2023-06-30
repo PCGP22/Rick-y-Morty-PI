@@ -1,0 +1,12 @@
+.navDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#4c6a25;
+    padding: 20px 0;
+}
+button{
+    background-color: #222;
+    border:none;
+    color:whitesmoke;
+}

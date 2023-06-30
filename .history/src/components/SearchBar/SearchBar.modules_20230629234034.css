@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.searchBar{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:8px;
+    margin-right: 20px;
+}
+.input{
+    font-family: 'Varela Round', sans-serif;
+    height: 5vh;
+    background:#629320;
+    color:white;
+    font-size: 2vh;
+    font-weight: bolder;
+    border:solid #222;
+    border-radius:8px;
+    position: relative;
+    width: 20vw;
+}
+.input:active{
+    border:black;
+}
+
+::placeholder{
+    color:rgb(224, 224, 224);
+    padding-left: 6px;
+}
+.botonBuscar,.botonRandom{
+    height: 5vh;
+    width: 5vh;
+    background-color:#629320;
+    color:rgb(247, 247, 247);
+    border:solid;
+    border-radius:8px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: 150ms ease-in-out all;
+}
+.simboloBuscar, .simboloDado{
+    transform: scale(1.8);
+}
+.simboloBuscar{
+    margin-left: -2px;
+}
+
+.botonBuscar:hover, .botonRandom:hover{
+    background-color:#456817;
+    border: outset greenyellow;
+    cursor:pointer;
+    
+}
+.botonBuscar:active,.botonRandom:active{
+    border:inset greenyellow;
+}

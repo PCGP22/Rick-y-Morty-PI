@@ -1,0 +1,33 @@
+.navDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#4c6a25;
+    padding: 20px 0;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    flex-shrink: 1;
+}
+button{
+    height: 8vh;
+    background-color:#fffffff0;
+    color:#00b7d4;
+    border: whitesmoke solid;
+    border-radius:8px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 2vh;
+}
+button:hover{
+    background-color:#456817;
+    border: outset greenyellow;
+    cursor:pointer;
+}
+button:active{
+    border:inset greenyellow;
+}
+.logo{
+    width: 10vw;
+}

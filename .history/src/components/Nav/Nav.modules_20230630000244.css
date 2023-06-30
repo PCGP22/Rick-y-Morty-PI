@@ -1,0 +1,35 @@
+.navDiv{
+    display: flex;
+    align-items: center;
+    background-color:#4c6a25;
+    
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    gap:2vw;
+    flex-shrink: 2;
+    height: 100%;
+}
+.home{
+    background-color:#fffffff0;
+}
+.botones button{
+    height: 100%;
+    background:transparent;
+    color:#00b7d4;
+    border: rgba(255, 255, 255, 0) solid;
+    font-family: 'Manrope', sans-serif;
+    font-size: 2vh;
+}
+button:hover{
+    background-color:#456817;
+    border: outset greenyellow;
+    cursor:pointer;
+}
+button:active{
+    border:inset greenyellow;
+}
+.logo{
+    width: 10vw;
+}

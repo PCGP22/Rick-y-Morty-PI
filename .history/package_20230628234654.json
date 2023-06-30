@@ -1,0 +1,12 @@
+{
+  "name": "Rick-y-Morty-PI",
+  "packageManager": "yarn@3.6.0",
+  "scripts": {
+    "---start":"node server.js",
+    "build": "webpack"
+    }
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+  
+}
