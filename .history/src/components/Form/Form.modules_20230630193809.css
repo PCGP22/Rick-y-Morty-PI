@@ -1,0 +1,35 @@
+.formDiv{
+    margin:auto;
+    width: 33vw;
+    height: 800px;
+    display: flex;
+    flex-flow: column wrap; 
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(107, 148, 191, 0.669);
+}
+.formDiv img{
+    height: 40%;
+    width: 80%;
+    border-radius: 2em;
+    border:#222 solid 3px;
+}
+form, ::placeholder{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+}
+form input{
+    height: 30px;
+}
+
+@media (max-width:600px) {
+    .formDiv{
+        width: 80 vw;
+    }
+}

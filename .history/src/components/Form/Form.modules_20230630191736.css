@@ -1,0 +1,9 @@
+.formDiv{
+    width: 33vw;
+
+}
+@media (max-width:600px) {
+    .formDiv{
+        width: 80 vw;
+    }
+}
