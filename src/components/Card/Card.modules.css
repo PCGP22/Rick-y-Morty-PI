@@ -1,80 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Varela+Round&display=swap');
-
-.card{
-    background-color: #2b733f;
+.card__container,.card__top{
     display: flex;
+}
+.card__container{
+    background-color:var(--verde);
     flex-direction: column;
     max-width: 270px;
     position: relative;
-    box-sizing: border-box;
-    border-radius: 8px;
-    border: solid #4c6a25 10px;
+    box-sizing:border-box;
+    border-radius:0.5em;
+    border: var(--negro) solid 10px;
+    font: var(--texto-bold);
+    color: var(--blanco);
+    padding: 4px 8px;
+    align-items:stretch;
 }
-.link{
+.card__status{
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    border: var(--negro) solid 5px;
+    background-color:var(--verde-estatus) 
+}
+.card__top{
+    justify-content: space-around;
+    align-items: center;
+    height: 8%;
+    padding:6px 0;
+}
+.card__id{
+    background-color:var(--verde-oscuro);
+    width: 45%;
+    border-radius:30px;
+    text-align: center;
+    margin:0;
+}
+
+.card__button{
+    background-color: var(--rojo);
+    color:var(--blanco);
+    border-radius: 8px;
+    height: 35px;
+    width: 35px;
+    border: var(--blanco) outset 4px;
+    font-size: 1em;
+    display: grid;
+    place-content: center;
+    font-weight: 700;
+    transition: 200ms ease-in-out all;
+}
+.card__img, .card__origin, .card__description{
+    border-radius:1em;
+}
+.card__img{
+    border: var(--gris) solid 6px; 
+}
+.card__origin, .card__description{
+    margin:4px;
+}
+.card__origin{
+    background-color:var(--gris);
+    text-align: center;
+    margin-top:8px;
+}
+.card__description{
+   background-color:var(--verde-oscuro);
+   text-align: center;
+}
+.card__description p, .card__description h3{
+    margin:8px;
+}
+.card__link{
+    position: absolute;
     text-decoration: none;
     color:inherit;
-}
-.nombre{
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.5em;
-    margin-bottom: 0;
-    margin-top: 0;
-    background: #629320;
-    padding: 10px 0;
-}
-.description, .cover p{
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1.2em;
-}
-.cover p{
-    padding: 80px;
-    background-color:#2459338d;
-}
-.description{
-    text-align: left;
-}
-.description p {
-    margin:0;
-    padding: 10px 15px;
-}
-
-.description p:nth-of-type(2n-1){
-    background: #245933;
- }
-
-.closeButton{
-    position: absolute;
-    right: 0;
-    background-color:black;
-    color:whitesmoke;
-    border-radius: 8px;
-    height: 30px;
-    width: 30px;
-    border:solid 2px whitesmoke;
-}
-.cover{
     position: absolute;
     top:0;
+    left:0;
+    margin:0;
     width: 100%;
     height: 100%;
-    background:#55555563;
+    padding-top:40%;
+    box-sizing:border-box;
+    background:#4242427c;
+    text-align: center;
     display: none;
-    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 5%, 90% 5%, 90% 0%);
-
+    clip-path: polygon(0% 0%, 79% 0%, 79% 10%, 93% 10%, 93% 2%, 79% 2%, 79% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.card__link p{
+    background-color:#24593390;
+    height: 25%;
+    display: grid;
+    place-content: center;
 }
 
-.closeButton:hover{
-    background-color:#555;
-    cursor:pointer;
-    transition: 200ms ease-in-out background-color;
-}
-.card:hover{
-    transform: scale(1.02);
-    transition: 200ms ease-out transform;
-    cursor:pointer;
-}
-.card:hover .cover{
+.card__container:hover .card__link{
     display: block;
 }
 
-/* card on hover; show alternate image */
+.card__button:hover{
+    cursor:pointer;
+    background-color: rgb(117, 8, 8);
+}
+.card__button:active{
+    border: var(--verde-oscuro) inset 6px;
+}

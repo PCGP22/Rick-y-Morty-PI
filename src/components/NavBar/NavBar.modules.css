@@ -1,0 +1,64 @@
+.navBar__container,.navBar__divButtons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navBar__container{
+    align-items: center;
+    padding: 5px 2vw;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.navBar__container,.navBar__buttons{
+    background-color:var(--negro);
+}
+
+.navBar__buttons__logo, .navBar__buttons{
+    border: var(--negro) solid 5px;
+    height: 80px;
+    transition:  all ease-in-out 200ms;
+} 
+
+.navBar__divButtons{
+    gap:15px;
+}
+
+.navBar__buttons{
+    font: var(--texto-botones);
+    color:var(--blanco);
+    padding: 0 20px;
+}
+
+.navBar__buttons:hover,.navBar__buttons__logo:hover{
+    background-color:var(--gris);
+    border: var(--blanco) outset 5px;
+}
+
+.navBar__buttons:active, .navBar__buttons__logo:active{
+    border: var(--blanco) inset 5px;
+}
+
+.navBar__buttons__icon{
+    transform: scale(2);
+}
+
+.navBar__buttons__burger{
+    display: none;
+}
+
+@media (max-width: 65em) {
+    .navBar__buttons, .navBar__buttons__logo{
+    display: none;
+    }
+    .navBar__buttons__burger{
+        display: block;
+    }
+}
+
+@media (max-width: 40em) {
+    .navBar__container{
+        padding: 10px;
+    }
+    
+}

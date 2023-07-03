@@ -1,7 +1,0 @@
-{
-  "name": "Rick-y-Morty-PI",
-  "packageManager": "yarn@3.6.0",
-  "devDependencies": {
-    "webpack-cli": "^5.1.4"
-  }
-}

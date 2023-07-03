@@ -1,0 +1,12 @@
+.navBar__container{
+    color:black
+}
+.navBar__divButtons{
+    border:outset;
+}
+.navBar__buttons{
+    border:outset;
+}
+.navBar__buttons__logo{
+    background-color: white;
+}

@@ -1,0 +1,88 @@
+.signUp__background{    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../..//img/inverted.png) ;
+    background-size: 1000px;
+}
+.signUp__container,.signUp__container__form{
+    height: min-content;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    padding: 5%;
+    border-radius: 2em;
+}
+.signUp__container{
+    width: 50%;
+    background-color:var(--negro);
+    align-items: center;
+}
+.signUp__container__form,.signUp__container__logo,.signUp__form__input{
+    width: 90%;
+}
+.signUp__container__form,.signUp__form__input{
+    font: var(--texto-bold);
+}
+.signUp__container__logo{
+    height: 40%;   
+}
+.signUp__container__form{
+    background-color: var(--verde-claro);
+}
+.signUp__form__input{
+    border-radius:8px;
+    padding-left: 8px;
+}
+.signUp__form__button{
+    align-self: center;
+    border-radius:0.5em;
+    background-color:var(--verde-oscuro);
+    color:var(--blanco);
+    font: var(--texto-botones); 
+    margin-top:10px;
+    width: 50%;
+    padding:8px 0;
+    border: var(--verde-oscuro) outset 6px;
+    transition:  all ease-in-out 200ms;
+}
+
+.signUp__form__button:hover{
+    background-color: var(--verde-estatus);
+}
+.signUp__form__button:active{
+    border: var(--verde-oscuro) inset 6px;
+}
+
+.signUp__form--error{
+    color:red;
+    font-size: 0.7em;
+    margin:0;
+   
+}
+
+@media (max-width:75em) {
+    .signUp__container{
+        width: 75%;
+    }
+    
+}
+
+@media (max-width:50em) {
+    .signUp__container{
+        width: 90%;
+    }
+ 
+}
+
+@media (max-width:26em) and (max-height:50em) {
+    .signUp__container__form,.signUp__form__input{
+        font-size: 1.2em;
+    }
+}
+@media (max-height:40em) {
+    .signUp__container__form,.signUp__form__input{
+        font-size: 1em;
+    }
+}

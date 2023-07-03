@@ -1,74 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-.searchBar{
+.searchBar__container{
+    display: flex;
     flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap:8px;
-    margin-right: 20px;
-}
-.searchBarDiv{
-    display: flex;
-}
-.input{
-    font-family: 'Varela Round', sans-serif;
-    height: 5vh;
-    background:#629320;
-    color:white;
-    font:inherit;
-    border:solid #222;
-    border-radius:8px;
-    position: relative;
-    width: 20vw;
-}
-.input:active{
-    border:black;
-}
-.input::-webkit-input-placeholder,.input{
-    color:rgb(224, 224, 224);
-    padding-left: 6px;
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
-.botonBuscar,.botonRandom{
-    height: 5vh;
-    width: 5vh;
-    background-color:#629320;
-    color:rgb(247, 247, 247);
-    border:solid;
-    border-radius:8px;
-    display: flex;
     justify-content: center;
-    align-items:center;
-    transition: 150ms ease-in-out all;
-}
-.simboloBuscar, .simboloDado{
-    transform: scale(1.5);
-}
-.simboloBuscar{
-    margin-left: -2px;
+    width: 40vw;
 }
 
-.botonBuscar:hover, .botonRandom:hover{
-    background-color:#456817;
-    border: outset greenyellow;
-    cursor:pointer;
-    
+.searchBar__input,.searchBar__buttons{
+    height: 50px;
 }
-.botonBuscar:active,.botonRandom:active{
-    border:inset greenyellow;
+.searchBar__input{
+    font:var(--texto-botones);
+    padding-left: 8px;
+}
+.searchBar__divButtons{
+    display: flex;
+}
+.searchBar__buttons__search{
+    border-radius: 0 8px 8px 0;
+}
+.searchBar__buttons__random{
+    border-radius: 8px;
+    margin-left: 6px;
 }
 
-@media (max-width:60em) {
-    .searchBar{
-        margin: 0px;
-    }
-    
+.searchBar__buttons{
+    padding: 30%;
+    color: var(--blanco);
+    background: var(--gris);
+    border: var(--gris) solid;
+    transition:  all ease-in-out 200ms;
 }
-@media (max-width:20em) {
-    .searchBar{
-        flex-direction: column;
+
+.searchBar__buttons:hover{
+    background:var(--negro);
+    border:  outset;
+}
+.searchBar__buttons:active{
+    border: inset;
+}
+
+.searchBar__buttons__icon{
+    transform: scale(2);
+}
+
+@media (max-width: 50em) {
+    .searchBar__container{
+        width: 50vw;
+        gap:8px
     }
+   
+    .searchBar__buttons__search{
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 40em) {
+ 
     
+  .searchBar__input,.searchBar__buttons{
+  height: 30px;
+  padding: 0;
+  }
+  .searchBar__input{
+    width:80%
+  }
+  .searchBar__buttons{
+    width: 30px;
+  }
+  .searchBar__buttons__icon{
+    transform: scale(1);
+  }
 }

@@ -1,0 +1,15 @@
+.navBar__container{
+    color:black
+}
+.navBar__buttons{
+    border:outset;
+}
+.navBar__buttons__home{
+    border:outset;
+}
+.navBar__buttons__logo{
+    background-color: white;
+}
+.navBar__buttons__about{
+    border:outset;
+}

@@ -1,28 +1,25 @@
+import { NavLink } from "react-router-dom"
 import "./Card.modules.css"
-import { NavLink } from "react-router-dom";
-export default function Card({name,status,species,gender,image,origin,onClose,id}) {
- 
-   
-   return (
-      <>
-      
-       <div className="card">
-         <img src={image} alt=''/>
-         <button className="closeButton" onClick={()=>onClose(name)}>X</button>
-            <h2 className="nombre">{"#"+id+": " + name}</h2>
-         <div className="description">
-            <p><strong>Status:</strong> {status}</p>
-            <p><strong>Species:</strong> {species}</p>
-            <p><strong>Gender:</strong> {gender}</p>
-            <p><strong>Origin:</strong> {origin.name}</p>
-         </div>
-      <NavLink className={"link"} to={`/detail/${id}`} >
-         <div className="cover">
-            <p><strong>More info</strong></p>
-         </div>
-      </NavLink>
+
+function Card({id,name,image,species,onClose,origin}) {
+  return (
+    <div className="card__container">
+      <div className="card__top">
+        <div className="card__status"/>
+        <p className="card__id">{`#${id}`}</p>
+        <button className="card__button" onClick={()=>onClose(name)}>X</button>
       </div>
-     
-      </>
-   );
+      <img src={image} className="card__img" alt=''/>
+      <p className="card__origin">{origin["name"]}</p>
+      <div className="card__description">
+        <h3 className="card__title">{name}</h3>
+        <p>{species}</p>
+      </div>
+      <NavLink className={"card__link"} to={`/detail/${id}`} >
+            <p><strong>More info</strong></p>
+      </NavLink>
+    </div>
+  )
 }
+
+export default Card

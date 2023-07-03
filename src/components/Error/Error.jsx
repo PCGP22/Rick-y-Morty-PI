@@ -1,27 +1,21 @@
-import React from 'react'
-import error from "../../Banner/Error.png"
+import error from '../../img/Error.png'
+import '../Details/Details.modules.css'
 
 function Error() {
-    const pj ={
-        id:"404",
-        image:"https://t3.ftcdn.net/jpg/03/31/62/20/240_F_331622080_WlWdLjpSjS4L2aGHa1x78FwIzvf0X4Ru.jpg",
-        name:"Not Found",
-        extra:"Esta página no existe"
-      }
-      return (
-        <div className='detailsCon'>
-          <img className='detailsImg' src={error} alt="Error 404"/>
-            
-              <div className='detailsDatos'>
-    
-                <p>
-                  <strong>Id: #</strong>{pj.id? pj.id:"Undefined"}
-                  <strong> - Nombre: </strong>{pj.name? pj.name:"Undefined"}
-                </p>
-                <p><strong>Extra: </strong>{pj.extra? pj.extra:"Undefined"}</p> 
-              </div>  
-          </div>
-      )
+  return (
+    <div className="details__background">
+      <div className="details__container">
+        <img className="details__img" src={error} alt="Error 404"/>
+        <div className="details__description">
+          <p>
+            <strong>Id: #</strong>404
+            <strong> - Name: </strong> Not Found
+          </p>
+          <p><strong>Extra: </strong>This page doesn't exist</p> 
+        </div>  
+      </div>
+    </div>
+  )
 }
 
 export default Error
