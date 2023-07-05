@@ -1,0 +1,104 @@
+.details__background{
+    background: url(../../img/grayscale.png);
+    background-size: 1000px;
+    display: grid;
+    place-items: center;
+}
+
+.details__container{
+    margin: clamp(8px,50px,100px);
+    padding: 2%;
+    border-radius:1em;
+    font:var(--texto-normal);
+    display: grid;
+    place-content: center;
+    grid-template-areas: "description image" "episodes episodes";
+    background-color:var(--verde-claro);
+    width: 50%;
+    height: max-content;
+    gap:clamp(10px,50px,100px);
+    justify-content: space-between;
+    align-items: space-around;
+}
+.details__img{
+    grid-area: image;
+    height: clamp(250px,400px,800px);
+    width: clamp(250px,400px,800px);
+    border-radius:50%;
+    margin:0;
+}
+
+.details__imgAndButton{
+    position: relative;
+}
+
+.details__favorite{
+    position: absolute;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    background-color:black;
+    border: var(--blanco) solid 4px;
+    border-radius: 8px;
+    transition:  all ease-in-out 200ms;
+}
+.details__favorite:hover{
+    background-color:var(--gris);
+}
+.details__favorite:active{
+    border: var(--gris) inset 4px;
+}
+
+.details__title,.details__episodes__title{
+    background-color:var(--verde-oscuro);
+    color:var(--blanco);
+    border-radius:1em;
+    padding: 2%;
+    display: block;
+    text-align: center;
+}
+.details__description{
+    grid-area: description;
+}
+
+.details__episodes__container{
+    padding:2%;
+    grid-area: episodes;
+    background-color:var(--verde-oscuro);
+    border-radius:1em;
+}
+.details__episodes__title{
+    border: var(--verde-oscuro) outset 6px;
+}
+
+.details__episodes__title:hover{
+   background-color:var(--verde-estatus)
+}
+.details__episodes__title:active{
+    border: var(--verde-oscuro) inset 6px;
+}
+.details__episodes__list{
+    display: flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.details__episodes__list p{
+    padding: 2%;
+    margin: 1%;
+}
+.details__episodes__list p{
+    background-color:var(--verde-claro);
+    border-radius:1em;
+    border: var(--negro) solid 4px;
+}
+@media (max-width:80em) {
+    .details__container{
+        width: minmax(80%,90%);
+        grid-template-areas: "image" "description" "episodes";
+        place-items: center;
+    }
+    .details__img{
+        width: 80%;
+    }
+}

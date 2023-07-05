@@ -1,0 +1,36 @@
+.navBar__aside{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    z-index: 2;
+}
+.aside__buttons,.aside__logo{
+    border: var(--blanco) solid 5px;
+    width: 50vw;
+    margin:15px;
+    background-color:var(--negro);
+    transition:  all ease-in-out 200ms;
+    border-radius: 1em;
+}
+.aside__buttons.x{
+    border: var(--negro) solid 5px;
+    font-size: 2em;
+}
+.aside__buttons{
+    font:var(--texto-botones);
+    color:var(--blanco);
+    height: 80px;
+}
+.aside__buttons:hover,.aside__logo:hover{
+    background-color:var(--gris);
+    border: var(--blanco) outset 5px;
+}
+.aside__buttons:active,.aside__logo:active{
+    border: var(--blanco) inset 5px;
+}
