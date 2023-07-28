@@ -1,13 +1,13 @@
 const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
-   sequelize.define('User', {
+   sequelize.define('Favorite', {
       id: {
-         type:DataTypes.INTEGER,
+         type: DataTypes.INTEGER,
          primaryKey: true
       },
-      email: DataTypes.STRING,
-      password: DataTypes.STRING
+      name: DataTypes.STRING,
+      status: DataTypes.STRING
    }, 
    { 
       timestamps: false 
