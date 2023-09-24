@@ -17,14 +17,14 @@ This SPA included the next functionalities:
 - State Management.
 
 Captures: <br/>
-<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zl8fhbWyAKzU2dsy6Qm0to790TLo-7KqRSYz4eBqC9VZJFPdEV_lG54Z7keRIJrhxkKTQ1E7aUMDWd0m5ZMe3_UzYEKw=s400" alt="Proyect Login Page"/><br/>
+<img src="https://drive.google.com/uc?export=download&id=12QrYuke7pOoecKzSWn36p7qVNcmbZnM6" alt="Proyect Login Page" width="400"/><br/>
 Login
 
-<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yxtzXSOR0JJjkeVL6sck6hwOGc7u0lsG9OyOX77PS3NtII_92AfPxfFkt4bV5QzjVg5yGyFf_DRCF8r2Vij_7QMVrYvg=s400" alt="Proyect Home Page"/><br/>
+<img src="https://drive.google.com/uc?export=download&id=126-rwtW6PIXukWZYj2moboUvYKeDHgiR" alt="Proyect Home Page" width="400"/><br/>
 Home Page
 
-<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-y_-ndvs1vIk1YaFzlQMYUASs-r7BOaQVXtj9A3E-iC-y6qI_IAfu0ffpQNCESeJZQN4r0OE6DdCyE3OaEaoSeK-vEF=s400" alt="Proyect Detail Page"/><br/>
+<img src="https://drive.google.com/uc?export=download&id=17TRMsDjIheNR9qVgyLLGLkaj8C5yRu7Y" alt="Proyect Detail Page" width="400"/><br/>
 Detail Page
 
-<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-ycvGRegnk1VAJwOBaLTiOYA3lVOR7jeSTYY0aTarBr6F8nDN4wrxt1TqZyDfV74n8s6QVAwMiGW8_-zw4MA95xxqHt=s400" alt="Proyect Favorites Page"/><br/>
+<img src="https://drive.google.com/uc?export=download&id=1Qe4zhJf-AQF9_Mg87REL9cO697twhE3l" alt="Proyect Favorites Page" width="400"/><br/>
 Favorites Page
